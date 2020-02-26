@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+
+body {
+	background: #cfcfcf;
+	text-align: center;
+}
+
+h1 {
+	color: rgb(66, 66, 66);
+	font-family: 'Oswald';
+	font-weight: 700;
+	position: relative;
+	margin: 30px auto;
+	text-transform: uppercase;
+	width: 550px;
+}
+
+selector voor het linker halve cirkeltje,
+selector voor het rechter halve cirkeltje {
+	// gezamelijke eigenschappen van de halve cirkels:
+	// - het is Winc blauw ... background:#4A90E2;
+	// - content is empty string
+	// - display... block? Inline-block?
+	// - aanta px hoog
+	// - aantal px breed
+	// - absolute positie
+}
+
+h1::before {
+	/* border radius, generator: https://www.cssmatic.com/border-radius
+    // Positioneer je halve rondje met left en top */
+	content: '';
+	background: #4a90e2;
+	display: inline-block;
+	height: 27px;
+	width: 20px;
+	position: absolute;
+	left: 16px;
+	top: 11px;
+	border-radius: 20px 0px 0px 20px;
+	-moz-border-radius: 20px 0px 0px 20px;
+	-webkit-border-radius: 20px 0px 0px 20px;
+	border: 0px solid #000000;
+}
+
+h1::after {
+	/* border radius, generator: https://www.cssmatic.com/border-radius
+    // Positioneer je halve rondje met left en top */
+	content: '';
+	background: #4a90e2;
+	display: inline-block;
+	height: 27px;
+	width: 20px;
+	position: absolute;
+	right: 16px;
+	top: 11px;
+	border-radius: 0px 20px 20px 0px;
+	-moz-border-radius: 0px 20px 20px 0px;
+	-webkit-border-radius: 0px 20px 20px 0px;
+	border: 0px solid #000000;
+}
+ul {
+	list-style: none;
+}
+.menu {
+	border: 1px solid rgb(95, 95, 95);
+	background-color: midnightblue;
+}
+.menu li {
+	display: inline-block;
+	border: 1px solid rgb(95, 95, 95);
+	padding: 10px 0px;
+	margin: 5px 15px;
+}
+.menu li:hover {
+	background-color: #4a90e2;
+}
+
+#link1 {
+	margin: 5px 5px 5px 0px;
+	padding: 15px 15px 15px 0px;
+	color: mintcream;
+}
+#link2 {
+	margin: 5px;
+
+	color: mintcream;
+}
+.currentPage a {
+	margin: 0px;
+	color: mintcream;
+}
+.currentPage {
+	background-color: rgb(91, 91, 116);
+}
+
+#r2d2:hover {
+	color: aqua;
+	font-weight: bold;
+}
+#searchbar:focus {
+	border-color: aqua;
+}
+#bumperdumper:active {
+	color: red;
+	font-style: italic;
+}
+#fav:visited {
+	color: yellow;
+	text-decoration-line: line-through;
+	-moz-text-decoration-line: line-through;
+}
+#inputter:focus {
+	font-size: 20px;
+	color: green;
+}
