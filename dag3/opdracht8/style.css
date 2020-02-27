@@ -1,0 +1,99 @@
+a:link,
+a:active,
+a:hover,
+a:visited {
+	color: #ffffff;
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	padding-left: 1em;
+}
+a {
+	font-size: 1.5em;
+	padding-left: 0.5em;
+}
+.social-media.blog {
+	background-color: #e17b77;
+	width: 320px;
+	height: 25px;
+	padding: 10px 6px;
+}
+.social-media.blog:hover {
+	transition: transform 0.3s ease-in-out;
+	transform: translate(-170px);
+}
+
+.social-media.facebook {
+	background-color: #3b5998;
+	width: 320px;
+	height: 25px;
+	padding: 10px 6px;
+}
+.social-media.facebook:hover {
+	transition: transform 0.3s ease-in-out;
+	transform: translate(-170px);
+}
+
+.social-media.twitter {
+	background-color: #00aced;
+	width: 320px;
+	height: 25px;
+	padding: 10px 6px;
+}
+.social-media.twitter:hover {
+	transition: transform 0.3s ease-in-out;
+	transform: translate(-170px);
+}
+
+.social-media.github {
+	background-color: #333;
+	width: 320px;
+	height: 25px;
+	padding: 10px 6px;
+}
+.social-media.github:hover {
+	transition: transform 0.3s ease-in-out;
+	transform: translate(-170px);
+}
+
+.social-media.linkedin {
+	background-color: #007bb6;
+	width: 320px;
+	height: 25px;
+	padding: 10px 6px;
+}
+.social-media.linkedin:hover {
+	transition: transform 0.3s ease-in-out;
+	transform: translate(-170px);
+}
+.fa-laptop-code::before {
+	content: '\f5fc';
+	font-size: 1.9em;
+	color: #ffffff;
+}
+.fa-twitter::before {
+	content: '\f099';
+	font-size: 1.9em;
+	color: #ffffff;
+}
+.fa-linkedin-in::before {
+	content: '\f0e1';
+	font-size: 1.9em;
+	color: #ffffff;
+}
+.fa-facebook-f::before {
+	content: '\f39e';
+	font-size: 1.9em;
+	color: #ffffff;
+}
+.fa-github::before {
+	content: '\f09b';
+	font-size: 1.9em;
+	color: #ffffff;
+}
+
+.social-media-container {
+	list-style: none;
+	position: absolute;
+	left: 94%;
+	top: 35%;
+}
